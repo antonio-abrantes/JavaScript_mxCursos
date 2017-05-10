@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScrip - Mx Cursos</title>
+</head>
+<style>
+
+</style>
+
+<body >
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<h1 align="center">Curso de JavaScript - Introdução ao jQuery</h1><hr>
+
+    <h1 id="retorno"></h1>
+
+    <h1 class="retorno1"></h1>
+    <h1 class="retorno1"></h1>
+    <h1 class="retorno1"></h1>
+    <h1 class="retorno1"></h1>
+
+    <h1 id="mostraEsconde">Seja bem vindo!</h1>
+
+    <input type="button" value="MOSTRA" id="btn1">
+    <input type="button" value="ESCONDE" id="btn2">
+
+    <script>
+        /* Introdução ao jQuery */
+
+        $(function() {
+             //console.log("jQuery funcionando");
+            $("#retorno").html("Bem vindo ao jQuery");
+
+            $(".retorno1").html("Texto para todos!!");
+
+            $("#btn1").click(function(){
+                $("#mostraEsconde").show('slow');
+            });
+
+            $("#btn2").click(function(){
+                $("#mostraEsconde").hide('slow');
+            });
+        });
+
+
+
+
+    </script>
+
+</body>
+</html>

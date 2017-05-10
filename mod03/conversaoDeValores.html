@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScrip - Mx Cursos</title>
+</head>
+<body>
+<h1 align="center">Curso de JavaScript - Conversão de valores</h1><hr>
+
+<script type="text/javascript">
+    /* Conversão de valores */
+
+    var numero = 100;
+    var array = [];
+
+    var str_numero = numero.toString();
+
+    console.log(typeof str_numero);
+
+    numero = parseInt(str_numero);
+
+    console.log(typeof numero);
+
+    //var flot_numero = 6.987;
+    var float_numero = parseFloat(numero);
+
+    //exibe NaN
+    console.log(parseInt("Antonio"));
+
+    console.log(typeof float_numero);
+    console.log(float_numero.toFixed(2));
+
+    //undefined = Variável não definida
+    console.log(array[1]);
+
+</script>
+
+</body>
+</html>

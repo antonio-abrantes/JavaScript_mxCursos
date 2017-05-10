@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScrip - Mx Cursos</title>
+</head>
+<style>
+    form{
+        background-color: beige;
+        align-content: center;
+    }
+    .bloco{
+        background: red;
+        color: white;
+        text-align: center;
+    }
+</style>
+<body >
+<h1 align="center">Curso de JavaScript - Mais eventos</h1><hr>
+
+<h1 id="mensagem" class="bloco">SEJA BEM VINDO</h1><br>
+
+<form method="post" id="frmContato">
+    <input type="text" size="50" id="txtNome">
+    <input type="submit" value="enviar">
+</form>
+
+
+<script type="text/javascript">
+    /* Eventos */
+
+    var h1Mesangem = document.getElementById("mensagem");
+    var frmContato = document.getElementById("frmContato");
+    var nome = document.getElementById("txtNome");
+
+    h1Mesangem.onmouseover = function(){
+        this.innerHTML = "Voce posicionou o mouse em cima";
+    }
+
+    h1Mesangem.onmouseout = function(){
+        this.innerHTML = "SEJA BEM VINDO";
+    }
+
+    //Atribuir evento ao campo
+
+    frmContato.onsubmit = function(){
+        var inputNome = document.getElementById("txtNome");
+
+        if(inputNome.value == "") {
+            alert("Preencha o campo nome!");
+            return false;
+        }
+    }
+
+    nome.onfocus = function(){
+        console.log("Campo esta em foco!");
+    }
+
+    nome.onblur = function(){
+        console.log("Campo saiu do foco!");
+    }
+
+
+
+</script>
+
+</body>
+</html>

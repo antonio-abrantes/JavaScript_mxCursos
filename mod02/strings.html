@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScrip - Mx Cursos</title>
+</head>
+<body>
+<h1 align="center">Curso de JavaScript - Strings</h1><hr>
+
+<script type="text/javascript">
+    /* Strings */
+
+    var string1 = "Nossa frase";
+    var email = new String("antonio@gmail.com");
+
+    var arroba = email.indexOf("@");
+    var ponto = email.indexOf(".", arroba);
+
+    console.log(email.substring(arroba+1, ponto));
+
+    console.log(email.substring(arroba));
+
+    console.log(email.substring(0,arroba));
+
+    console.log(email.length);
+
+    console.log(email.replace(".", "_"));
+
+    console.log(email.toUpperCase());
+
+    console.log(email.substring(0,arroba).concat("@hotmail.com"));
+
+</script>
+
+</body>
+</html>

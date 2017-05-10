@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScrip - Mx Cursos</title>
+</head>
+<style>
+    form{
+        background-color: beige;
+        align-content: center;
+    }
+    .bloco{
+        background: red;
+        color: white;
+        text-align: center;
+    }
+</style>
+<body >
+<h1 align="center">Curso de JavaScript - Objeto Window</h1><hr>
+
+<input type="button" value="Abre PopUp"  id="abre" >
+<input type="button" value="Fecha PopUp"  id="fecha" >
+
+<script type="text/javascript">
+    /* Objeto window */
+
+    var popup = false;
+
+    var btnAbrePopuo = document.getElementById("abre");
+
+    var btnFechaPopuo = document.getElementById("fecha");
+
+    btnAbrePopuo.onclick = function(){
+        popup = window.open("http://www.google.com", "Jenela", "width=300", "height=300");
+    };
+
+    btnFechaPopuo.onclick = function(){
+        console.log(popup);
+        popup.close();
+    };
+
+
+</script>
+
+</body>
+</html>

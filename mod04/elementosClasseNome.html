@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScrip - Mx Cursos</title>
+</head>
+<body>
+<h1 align="center">Curso de JavaScript - Elementos por Classe e por Nome</h1><hr>
+
+<h1 id="painelMensagem"></h1>
+
+<form>
+
+    VALOR ATRIBUIDO POR SCRIPT:
+    <input type="text" value="" id="campoNome" name="campoNome">
+
+</form>
+
+<ul>
+    <li>ITEM</li>
+    <li class="fundoVerde">ITEM</li>
+    <li>ITEM</li>
+    <li class="fundoVerde">ITEM</li>
+    <li >ITEM</li>
+    <li class="fundoVerde"> ITEM</li>
+    <li>ITEM</li>
+</ul>
+
+<script type="text/javascript">
+    /* Elementos por Classe e por Nome */
+
+    var elementosLi = document.getElementsByTagName("li");
+    //console.log(elementosLi);
+    var classeFundoVerde = document.getElementsByClassName("fundoVerde");
+
+    for(var i = 0; i < elementosLi.length; i++){
+        if(i % 2 == 0){
+            elementosLi[i].style.backgroundColor = "blue";
+        }else{
+            elementosLi[i].style.backgroundColor = "green";
+        }
+        classeFundoVerde[i].style.backgroundColor = "red";
+    }
+
+</script>
+
+</body>
+</html>

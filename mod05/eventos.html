@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScrip - Mx Cursos</title>
+</head>
+<body >
+<h1 align="center">Curso de JavaScript - Trabalhando com eventos</h1><hr>
+
+    <a href="http://www.google.com" onclick="return evento1()">CLIQUE EM MIM</a><br>
+
+    <a href="#" id="lnkMouseOver" >Passe o mouse em cima</a>
+
+<script type="text/javascript">
+    /* Eventos */
+
+    var lnkFaleConosco = document.getElementById("lnkMouseOver");
+    var passaMouseEmCima = function(){
+        alert("Você passou o mouse em cima");
+    }
+
+    function evento1(){
+        console.log("LINK CLICADO!");
+        //alert("TEste");
+        var resp = prompt("DESEJA CONTINUAR?");
+
+        if(!resp){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    var carregouPagina =  function(){
+        console.log("Pagina terminou de ser carregada!");
+    }
+
+    window.onload = carregouPagina;
+
+    lnkFaleConosco.onmouseover = passaMouseEmCima;
+
+</script>
+
+</body>
+</html>

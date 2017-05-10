@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScrip - Mx Cursos</title>
+</head>
+<body>
+<h1 align="center">Curso de JavaScript - Datas</h1><hr>
+
+<script type="text/javascript">
+    /* Datas - Date() */
+
+    var data = new Date();
+    var diaSemana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", ];
+
+    console.log(data);
+
+    console.log(data.getTime());
+
+    console.log("Data atual: "+data.getDate()+"/"+(data.getMonth() +1)+"/"+data.getFullYear());
+
+    console.log("Hoje é "+diaSemana[data.getDay()]);
+
+</script>
+
+</body>
+</html>

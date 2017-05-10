@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScrip - Mx Cursos</title>
+</head>
+<body>
+<h1 align="center">Curso de JavaScript - Elementos por ID</h1><hr>
+
+<h1 id="painelMensagem"></h1>
+
+<form>
+
+    VALOR ATRIBUIDO POR SCRIPT:
+    <input type="text" value="" id="campoNome">
+
+</form>
+
+<script type="text/javascript">
+    /* Elementos por ID - getElementById */
+
+    var campoTexto = document.getElementById("campoNome");
+    //console.log(campoTexto);
+    var painel = document.getElementById("painelMensagem");
+    var mensagem = "Olá, seja bem vindo Antonio";
+
+    painel.innerHTML = mensagem;
+
+
+    var valor1 = 10, valor2 = 20;
+
+    campoTexto.value = valor1 + valor2;
+
+
+</script>
+
+</body>
+</html>

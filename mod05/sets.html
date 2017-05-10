@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScrip - Mx Cursos</title>
+</head>
+<style>
+    form{
+        background-color: beige;
+        align-content: center;
+    }
+    .bloco{
+        background: red;
+        color: white;
+        text-align: center;
+    }
+</style>
+<body >
+<h1 align="center">Curso de JavaScript - Mais eventos - SetTimeOut e SetInterval</h1><hr>
+<h1 id="mostraSegundos">0</h1>
+
+<input type="button" value="INICIAR" onclick="iniciar();">
+<input type="button" value="PARAR" onclick="parar();"><br><br>
+
+<a href="#" onclick="history.go(-1)">LINK</a>
+
+<script type="text/javascript">
+    /* Mais eventos */
+
+    var elementoH1 = document.getElementById("mostraSegundos");
+    var intervaloSegundo = "";
+    var intContagem = function(){
+        elementoH1.innerHTML = parseInt(elementoH1.innerHTML) + 1;
+    }
+
+    function iniciar(){
+        intervaloSegundo = setInterval(intContagem, 1000);
+        //console.log(window.location);
+    }
+
+     function parar(){
+         clearInterval(intervaloSegundo);
+     }
+
+    window.onload = function(){
+//        var setTime = function (){
+//            alert("Disparou");
+//        };
+//
+//        setTimeout(setTime, 5000);
+    }
+
+
+
+
+</script>
+
+</body>
+</html>

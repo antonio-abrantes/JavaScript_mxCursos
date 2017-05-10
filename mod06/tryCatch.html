@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScrip - Mx Cursos</title>
+</head>
+<style>
+    form{
+        background-color: beige;
+        align-content: center;
+    }
+    .bloco{
+        background: red;
+        color: white;
+        text-align: center;
+    }
+</style>
+<body >
+<h1 align="center">Curso de JavaScript - Tratamento de erros com Try/Catch</h1><hr>
+
+
+
+<script type="text/javascript">
+    /* TRatamento de erros */
+
+    try {
+        var numero = "abc";
+
+        if(isNaN(numero)) throw "A variavel numero contem uma string";
+
+    } catch(erro){
+        console.log("Ocorreu um erro: "+erro);
+    } finally {
+        console.log("Este codigo sempre executa");
+    }
+
+    console.log("codigo continua a execução")
+
+</script>
+
+</body>
+</html>

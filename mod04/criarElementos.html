@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScrip - Mx Cursos</title>
+</head>
+<body>
+<h1 align="center">Curso de JavaScript - Criar elementos via JavaScript</h1><hr>
+
+<h1 id="painelMensagem"></h1>
+
+
+<script type="text/javascript">
+    /* Criar elementos via JavaScript */
+
+    var botao1 = document.createElement("button");
+    var textoBtn1 = document.createTextNode("BOTAO1");
+
+    botao1.appendChild(textoBtn1);
+
+    var botao2 = document.createElement("button");
+    var textoBtn2 = document.createTextNode("BOTAO2");
+    botao2.appendChild(textoBtn2);
+
+    document.body.appendChild(botao1);
+    document.body.appendChild(botao2);
+
+
+    var titulo = document.createElement("h1");
+    var texto = document.createTextNode("H1 CRIADO VIA JAVASCRIPT")
+    //titulo.innerHTML = "H1 CRIADO VIA JAVASCRIPT";
+    titulo.appendChild(texto);
+
+    document.body.appendChild(titulo);
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScrip - Mx Cursos</title>
+</head>
+<body>
+<h1 align="center">Curso de JavaScript - JSON</h1><hr>
+
+<script type="text/javascript">
+    /* JSON */
+
+    var obj = {
+        "Nome": "Antonio",
+        "Idade": 25,
+        "Cidade": "Sousa"
+    };
+
+    console.log(obj.Cidade);
+
+    var texto = '{"paragrafo": "teste teste teste teste"}';
+
+    console.log(texto);
+
+    console.log(JSON.parse(texto));
+
+    var clientes = {
+        "clientes" : [
+            {"Nome" : "Antonio", "Idade": 25},
+            {"Nome": "Ana", "Idade": 20}
+            ]
+    };
+
+    console.log(clientes);
+
+</script>
+
+</body>
+</html>

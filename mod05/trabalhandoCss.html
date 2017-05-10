@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScrip - Mx Cursos</title>
+</head>
+<style>
+    form{
+        background-color: beige;
+        align-content: center;
+    }
+    .bloco{
+        background: red;
+        color: white;
+        text-align: center;
+    }
+    .marcado{
+        background: green;
+        border: 1px solid black;
+    }
+    .desmarcado{
+        background: white;
+        border: 1px solid red;
+    }
+    .marcado, .desmarcado{
+        cursor: pointer;
+    }
+</style>
+<body >
+<h1 align="center">Curso de JavaScript - Trabalhando com CSS</h1><hr>
+<h1>TROCAR COR DE FUNDO DA PAGINA</h1>
+<a href="#" onclick="trocaCorFundo('red')">COR VERMELHA</a><br>
+<a href="#" onclick="trocaCorFundo('yellow')">COR AMARELA</a><br>
+<a href="#" onclick="trocaCorFundo('green')">COR VERDE</a><br>
+<h1>Setar nome da classe</h1>
+
+<h2 class="desmarcado" id="chkH2">Desmarcado</h2>
+
+<script type="text/javascript">
+    /* Trabalhando com CSS */
+
+    function trocaCorFundo(cor){
+        var body = document.getElementsByTagName('body')[0];
+        body.style.backgroundColor = cor;
+
+        var link = document.getElementsByTagName('a')[2];
+        link.innerHTML = "Funcionou";
+    };
+
+    var chkH2 = document.getElementById("chkH2");
+
+    chkH2.onclick = function(){
+        console.log(this.className);
+
+        this.className = (this.className == "desmarcado") ? "marcado" : "desmarcado";
+    }
+
+
+</script>
+
+</body>
+</html>

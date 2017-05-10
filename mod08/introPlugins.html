@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScrip - Mx Cursos</title>
+</head>
+<style>
+
+</style>
+<script src="src/camanjs/caman.full.min.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+
+    /* Trabalhando com plugins */
+
+    Caman('#img1', function () {
+        this.brightness(2);
+        this.contrast(10);
+        this.sepia(20);
+        this.saturation(-5);
+        this.render();
+        this.stackBlur(1);
+    });
+
+</script>
+<body >
+<h1 align="center">Curso de JavaScript - Trabalhando com plugins</h1><hr>
+
+<div id="retorno">
+   <img src="img/off.jpg" style="margin: 10px">
+    <img src="img/off.jpg" style="margin: 10px" id="img1">
+</div>
+
+</body>
+</html>

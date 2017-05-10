@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScrip - Mx Cursos</title>
+</head>
+<body>
+<h1 align="center">Curso de JavaScript - Swith-Case</h1><hr>
+
+<script type="text/javascript">
+    /* Condicionais */
+
+    var plano = parseInt(prompt("Digite o plano"));
+
+    //Operador ternario
+    plano = (plano === 1) ? plano : plano = 3;
+
+    switch(plano){
+        case 1:
+            console.log("Plano Mensal");
+            break;
+        case 2:
+            console.log("Plano Bimestral");
+            break;
+        default:
+            console.log("Nenhuma das opcoes cadastradas");
+    };
+
+</script>
+
+</body>
+</html>

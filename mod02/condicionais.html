@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScrip - Mx Cursos</title>
+</head>
+<body>
+<h1 align="center">Curso de JavaScript - Condicionais</h1><hr>
+
+<script type="text/javascript">
+    /* Condicionais */
+
+    function validaEmail(pemail){
+
+        var email = new String(pemail);
+
+        var arroba = email.indexOf("@");
+        var ponto = email.indexOf(".", arroba);
+        var dominio = email.substring(arroba+1, email.length);
+        var usuario = email.substring(0,arroba);
+        var espacoEmBranco = email.indexOf(" ");
+
+        //var status = true;
+
+        if(espacoEmBranco != -1 || arroba == -1 || ponto == -1 || dominio.length < 3 || usuario.length < 1){
+            return false;
+        }
+
+        console.log("Usuário: "+usuario);
+        console.log("Dominio: "+dominio);
+
+        return true;
+    }
+
+    var resposta = validaEmail("antonio_abrantes@hotmail.com");
+
+    if(resposta){
+        console.log("E-mail valido!");
+    }else{
+        console.log("E-mail invalido");
+    }
+
+
+</script>
+
+</body>
+</html>
